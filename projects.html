@@ -85,7 +85,7 @@
                     </div>
                     <div class="col-lg-6 mb-4">
                       <div class="card h-100">
-                        <a href="https://marketplace.visualstudio.com/items?itemName=Licio.semantic-ui-snippets" target="_blank"><img class="card-img-top" src="img/semantic.png" alt=""></a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=Licio.semantic-ui-snippets" target="_blank"><img class="card-img-top" src="img/semantic.png`" alt=""></a>
                         <div class="card-body">
                           <h4 class="card-title">
                             <a href="https://marketplace.visualstudio.com/items?itemName=Licio.semantic-ui-snippets" target="_blank">Semantic-UI Snippets</a>
@@ -128,7 +128,14 @@
                     </section>
                     </footer>
                    
-                    <script src="js/main.js"></script>
+                    <script
+                    src="http://code.jquery.com/jquery-3.3.1.min.js"
+                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                    crossorigin="anonymous"></script>
+                      <script src="js/main.js"></script>
+                    <!-- Bootstrap core JavaScript-->
+                    <script src="js/bootstrap-native-v4.min.js"></script>
+                    <script>var typingSpeed=50,blinkingSpeed=400,elements=document.getElementsByClassName("typeit");function typeElement(e){if(!(null==elements||e>=elements.length)){var n=elements[e],t=n.textContent;n.innerHTML="",typeStringInside(n,t),typeElement(e+1)}}function typeStringInside(e,n){null!=n&&""!=n&&typeCharacterInsideElement(0,e,n)}function typeCharacterInsideElement(e,n,t){if(e>=t.length)typeBlinkingPipe(n);else{var i=t[e];setTimeout(function(){n.innerHTML+=i,typeCharacterInsideElement(e+1,n,t)},typingSpeed)}}function typeBlinkingPipe(e){var n=e.innerHTML+'<span class="blinking" style="visibility: visible;">|</span>';setTimeout(function(){e.innerHTML=n,startBlinkingElement(e.getElementsByClassName("blinking")[0])},typingSpeed)}function startBlinkingElement(e){setInterval(function(){var n=e.style.visibility;e.style.visibility="hidden"==n?"visible":"hidden"},blinkingSpeed)}typeElement(0);</script>
 </body>
 
 </html>
