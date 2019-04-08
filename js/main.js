@@ -15,3 +15,6 @@ $('.nav-item a').on('click',function (event){
         );
     }
 })
+
+
+      
