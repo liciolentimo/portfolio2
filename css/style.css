@@ -34,11 +34,11 @@ header {
     background: #01579b;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     header {
         padding: 156px 0 100px;
     }
-}
+} */
 
 section {
     padding: 140px 0;
