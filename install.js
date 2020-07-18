@@ -1,8 +1,16 @@
+let deferredInstallPrompt = null;
+const installButton = document.getElementById('butInstall');
+installButton.addEventListener('click', installPWA);
 window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
-deferredInstallPrompt = evt;
+
+function saveBeforeInstallPromptEvent(evt){
+    deferredInstallPrompt = evt;
 installButton.removeAttribute('hidden');
-deferredInstallPrompt.prompt();
-// Hide the install button, it can't be called twice.
+}
+
+function installPWA(evt){
+    deferredInstallPrompt.prompt();
+    // Hide the install button, it can't be called twice.
 evt.srcElement.setAttribute('hidden', true);
 deferredInstallPrompt.userChoice
     .then((choice) => {
@@ -13,4 +21,10 @@ deferredInstallPrompt.userChoice
       }
       deferredInstallPrompt = null;
     });
+}
+
     window.addEventListener('appinstalled', logAppInstalled);
+
+    function logAppInstalled(evt){
+        console.log('Licio Lentimo App was installed.', evt);
+    }
