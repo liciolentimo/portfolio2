@@ -1,5 +1,12 @@
 const FILES_TO_CACHE = [
-    '/offline.html',
+    '/index.html',
+    '/img/moringa.png',
+    '/img/lentimo.jpg',
+    '/img/safina.png',
+    '/img/semantic.png',
+    '/img/total.png',
+    '/img/news.jpg',
+    '/img/laptop.jpg',
   ];
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
