@@ -323,6 +323,7 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+
 }
 .portfolio__item {
     background: var(--clr-accent);
