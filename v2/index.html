@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KL32MT6Q');</script>
+
+    <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76297363-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-76297363-7');
+</script> -->
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+          .then((reg) => {
+            console.log('Service worker registered.', reg);
+          });
+    });
+  }
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Licio Lentimo">
+    <meta name="description" content="Licio Lentimo's portfolio">
+    <meta name="theme-color" content="#16e0bd" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Licio Lentimo">
+    <link rel="apple-touch-icon" href="/img/icons/logo152.png">
+    <meta name="keywords" content="android development, web development,fullstack developer,licio lentimo">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>Licio Lentimo</title>
+    <script src="install.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="public/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL32MT6Q"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <div class="logo">
+            <img src="/favicon.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                <!-- <li class="nav__item"><a href="#" class="nav__link">Contact</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Licio Lentimo</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Software Dev</p> 
+        <img src="img/lenty.jpg" alt="" class="intro__img"> 
+    </section>
+    
+    <!-- Services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Web Design + Development</h3>
+                <p>Having a fast website is key to keeping people around which ultimately converts them into customers.
+                    There are a myriad of techniques involved in making a fast website, all of which I've spent years learning.</p>
+            </div>
+
+            <div class="service">
+                <h3>Android App Development</h3>
+                <p>Worked on various apps including custom views, maps, Firebase database/firestore, REST APIs etc.
+                    I strive to write clean, readable, reusable code, implement design patterns and design principles.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>SEO</h3>
+                <p>I help businesses achieve growth in customer numbers and general outreach on search engines.</p>
+            </div>
+        </div>
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I Am</h2>
+        <p class="section__subtitle section__subtitle--about">Software Developer based in Nairobi</p>
+        <div class="about-me__body">
+            <p>Hello, I am a full stack software engineer, I enjoy bridging the gap between engineering and design, combining my technical knowledge with my keen eye for design to create beautiful products.
+               I have great passion for building mobile and web applications that are scalable and efficient under the hood while providing engaging, pixel perfect user experiences.</p>
+            <!-- <p></p> -->
+        </div>
+        <img src="img/licio_image.jpg" alt="" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of some of my work</p>
+        <div class="portfolio">
+            <!-- <a href="https://brayomoha.co.ke" target="_blank" class="portfolio__item">
+                <img src="/img/brayo.jpg" alt="" class="portfolio__img">
+            </a> -->
+
+            <a href="https://safina-amina.org" target="_blank" class="portfolio__item">
+                <img src="img/safina.png" alt="" class="portfolio__img">
+            </a>
+
+            <a href="https://marketplace.visualstudio.com/items?itemName=Licio.semantic-ui-snippets" target="_blank" class="portfolio__item">
+                <img src="img/semantic.png" alt="" class="portfolio__img">
+            </a>
+
+            <!-- <a href="https://play.google.com/store/apps/details?id=com.lentimosystems.licio.totalrecipes" target="_blank" class="portfolio__item">
+                <img src="img/total.png" alt="" class="portfolio__img">
+            </a> -->
+
+            <!-- <a href="https://play.google.com/store/apps/details?id=com.lentimosystems.licio.newscentral" target="_blank" class="portfolio__item">
+                <img src="img/news.jpg" alt="" class="portfolio__img">
+            </a> -->
+
+            <!-- <a href="https://bashment.herokuapp.com" target="_blank" class="portfolio__item">
+                <img src="img/bashment.jpg" alt="" class="portfolio__img">
+            </a> -->
+
+            <!-- <a href="https://play.google.com/store/apps/details?id=com.lentimosystems.discoversamburu&hl=en_PY&gl=US" target="_blank" class="portfolio__item">
+                <img src="img/samburu.png" alt="" class="portfolio__img">
+            </a> -->
+
+            <!-- <a href="https://lakiraelectronics.com" target="_blank" class="portfolio__item">
+                <img src="/img/lakira.png" alt="" class="portfolio__img">
+            </a> -->
+
+            <!-- <a href="https://sartorialscents.com" target="_blank" class="portfolio__item">
+                <img src="img/sartorial.png" alt="" class="portfolio__img">
+            </a> -->
+
+            <!-- <a href="https://bolenlimited.com" target="_blank" class="portfolio__item">
+                <img src="img/bolen2.jpg" alt="" class="portfolio__img">
+            </a> -->
+            <!-- <a href="https://elmaya.co.ke" target="_blank" class="portfolio__item">
+                <img src="img/elmaya.png" alt="" class="portfolio__img">
+            </a> -->
+            <!-- <a href="https://play.google.com/store/apps/details?id=com.lentimosystems.attendance" target="_blank" class="portfolio__item">
+                <img src="img/trackius.jpg" alt="" class="portfolio__img">
+            </a> -->
+            <a href="https://izwoflimited.netlify.app/" target="_blank" class="portfolio__item">
+                <img src="img/izwof2.png" alt="" class="portfolio__img">
+            </a>
+            <a href="https://helapay.africa" target="_blank" class="portfolio__item">
+                <img src="img/helapay.png" alt="" class="portfolio__img">
+            </a>
+            <!-- <a href="https://africansentinelnews.com" target="_blank" class="portfolio__item">
+                <img src="https://africansentinelnews.com/wp-content/uploads/2022/07/cropped-africansentinel.png" alt="" class="portfolio__img">
+            </a> -->
+            <!-- <a href="https://germany247jobs.com" target="_blank" class="portfolio__item">
+                <img src="img/germanymap.png" alt="" class="portfolio__img">
+            </a> -->
+            <a href="https://mpasinaitours.com" target="_blank" class="portfolio__item">
+                <img src="img/mpasinai.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="https://somalms.vercel.app/sign-in" target="_blank" class="portfolio__item">
+                <img src="img/logo.svg" alt="" class="portfolio__img">
+            </a>
+            <a href="https://seasonshotelmaralal.com" target="_blank" class="portfolio__item">
+                <img src="img/seasons_logo.png" alt="" class="portfolio__img">
+            </a>
+            <a href="https://nkaji.com" target="_blank" class="portfolio__item">
+                <img src="img/nkaji.png" alt="" class="portfolio__img">
+            </a>
+            <!-- <a href="https://pls2024.com/" target="_blank" class="portfolio__item">
+                <img src="img/pls.jpg" alt="" class="portfolio__img">
+            </a> -->
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:lentimo@gmail.com" class="footer__link">hello@liciolentimo.com</a>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="liciolentimo" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        <ul class="social-list">
+            <li class="social-list__item"><a target="_blank" href="https://twitter.com/liciolentimo" class="social-list__link"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-list__item"><a target="_blank" href="https://www.linkedin.com/in/liciolentimo/" class="social-list__link"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="social-list__item"><a target="_blank" href="https://github.com/liciolentimo" class="social-list__link"><i class="fab fa-github"></i></a></li>
+            <li class="social-list__item"><a target="_blank" href="https://lentimo.medium.com/" class="social-list__link"><i class="fab fa-medium"></i></a></li>
+            <li class="social-list__item"><a target="_blank" href="https://www.youtube.com/channel/UCM3r56mt458MvUj7CIGGhxg" class="social-list__link"><i class="fab fa-youtube"></i></a></li>
+            <!-- <li class="social-list__item"><a target="_blank" href="https://stackoverflow.com/users/11334990/licio-lentimo" class="social-list__link"><i class="fab fa-stack-overflow"></i></a></li> -->
+            <li class="social-list__item"><a target="_blank" href="https://instagram.com/liciolentimo" class="social-list__link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
